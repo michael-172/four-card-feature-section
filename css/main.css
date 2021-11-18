@@ -1,0 +1,132 @@
+:root{
+    --main-color: #6446a3;
+}
+
+.main-page{
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.main-page .text-content{
+    text-align: center;
+    padding: 70px 0px 10px 0px;
+    height: 30vh;
+}
+
+.main-page .text-content h3:first-of-type{
+    font-weight: 100;
+    font-size: 34px;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 6px;
+    color: #787878;
+}
+.main-page .text-content h3:nth-of-type(2){
+    font-weight: bold;
+    color: #4d5172;
+    font-size: 32px;
+    width: fit-content;
+    margin: auto;
+}
+
+.main-page .text-content p{
+    max-width: 490px;
+    margin: auto;
+    color: #504f4f9c;
+}
+
+.main-page .cards{
+    position: relative;
+    width: 100%;
+    height: 69vh;
+}
+
+.main-page .cards .first-box,
+.main-page .cards .second-box,
+.main-page .cards .third-box,
+.main-page .cards .fourth-box{
+    width: 300px;
+    height: 220px;
+    background-color: #FFF;
+    position: absolute;
+    border-top: 3px solid;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-page .cards .first-box{
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-color: hsl(180, 62%, 55%);
+}
+.main-page .cards .fourth-box{
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-color: hsl(212, 86%, 64%);
+}
+
+.main-page .cards .second-box{
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
+    border-color: hsl(0, 78%, 62%);
+}
+.main-page .cards .third-box{
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    border-color: hsl(34, 97%, 64%);
+}
+
+.main-page .heads{
+    padding: 10px 20px;
+}
+.main-page .heads h2{
+    font-size: 20px;
+    color: #4d5172;
+}
+.main-page .heads span{
+    font-size: 14px;
+    line-height: 1;
+    color: #9d9d9d;
+}
+.main-page .cards .icon{
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+
+@media (max-width: 375px) {
+    .main-page .cards .first-box,
+    .main-page .cards .second-box,
+    .main-page .cards .third-box,
+    .main-page .cards .fourth-box{
+    position: relative;
+    width: 100%;
+    left: unset;
+    top: unset;
+    bottom: unset;
+    transform: unset;
+    margin-bottom: 30px;
+}
+
+.main-page {
+    height: unset;
+}
+
+.main-page .text-content{
+    height: unset;
+}
+
+.main-page .cards{
+    margin-top: 30px;
+    height: fit-content;
+    margin-top: 31px;
+    height: fit-content;
+    margin-bottom: 70px;
+}
+
+
+}
